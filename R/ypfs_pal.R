@@ -10,7 +10,7 @@ ypfs_pal <- list(
                 "#bd5319",
                 "#5f712d",
                 "#978d85"),
-  sequential = list(low = "#f1eff2",
+  sequential = list(low = "#E6D2EF",
                  high = "#cc71b9"),
   divergent = list(low = "#5f712d",
                 mid = "#fdeabf",
