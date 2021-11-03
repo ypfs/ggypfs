@@ -1,9 +1,11 @@
 #' @importFrom ggplot2 discrete_scale
+#' @export
 scale_fill_ypfs_d <- function(palette = "west_rock", ..., direction = 1) {
   discrete_scale("fill", palette, ypfs_palette(name = palette, reverse = reverse), ...)
 }
 
 #' @importFrom ggplot2 discrete_scale
+#' @export
 scale_colour_ypfs_d <- function(palette = "west_rock", ..., reverse = FALSE) {
   discrete_scale("colour", palette, ypfs_palette(name = palette, reverse = reverse), ...)
 }
@@ -11,6 +13,7 @@ scale_colour_ypfs_d <- function(palette = "west_rock", ..., reverse = FALSE) {
 scale_color_ypfs_d <- scale_colour_ypfs_d
 
 #' @importFrom ggplot2 scale_fill_gradient scale_fill_gradient2 scale_fill_gradientn
+#' @export
 scale_fill_ypfs_c <- function(type = c("sequential", "divergent", "yale_blues"), ..., reverse = FALSE) {
   type <- match.arg(type, c("sequential", "yale_blues", "divergent"))
   switch(type,
@@ -20,6 +23,7 @@ scale_fill_ypfs_c <- function(type = c("sequential", "divergent", "yale_blues"),
 }
 
 #' @importFrom ggplot2 scale_fill_gradient scale_fill_gradient2 scale_fill_gradientn
+#' @export
 scale_colour_ypfs_c <- function(type = c("sequential", "divergent", "yale_blues"), ..., reverse = FALSE) {
   type <- match.arg(type, c("sequential", "yale_blues", "divergent"))
   switch(type,
