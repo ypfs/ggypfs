@@ -1,3 +1,4 @@
+#' export
 ypfs_pal <- list(
   west_rock = c("#286dc0",
                 "#cc71b9",
