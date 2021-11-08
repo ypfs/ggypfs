@@ -48,13 +48,13 @@ ggplot(iris) +
 !['yale_blues: "#A5D2EB" "#4BA5D7" "#1069A0" "#00356B" "#000440"'](github_resources/yale_blues.svg)
 
 Note that you can also use the qualitative palettes with `scale_*_ypfs_c`---though I'd only recommend this with `yale_blues`:
-!['yale_blues but continuous'](github_resources/yale_blues_continuous.svg)
+!['yale_blues but continuous'](github_resources/yale_blues_continuous.png)
 
 ### sequential
-!['sequential: low = #E6D2EF high = #cc71b9'](github_resources/sequential.svg)
+!['sequential: low = #E6D2EF high = #cc71b9'](github_resources/sequential.png)
 
 ### divergent
-!['divergent: low = #5f712d mid = #fdeabf high = #bd5a0e'](github_resources/divergent.svg)
+!['divergent: low = #5f712d mid = #fdeabf high = #bd5a0e'](github_resources/divergent.png)
 
 ## method
 Check the [brainstorming](github_resources/brainstorming.html) doc to understand the iteration and selection process for themes a bit better.
