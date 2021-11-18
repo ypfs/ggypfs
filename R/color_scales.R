@@ -33,24 +33,24 @@ scale_color_ypfs_d <- scale_colour_ypfs_d
 #'
 #' @rdname scale_fill_ypfs_d
 #' @export
-scale_fill_ypfs_c <- function(type = c("sequential", "divergent", "yale_blues"), ..., reverse = FALSE) {
-  type <- match.arg(type, c("sequential", "yale_blues", "divergent"))
-  switch(type,
-         sequential = scale_fill_gradient(ypfs_palette(type, reverse = reverse)(2), ...),
-         yale_blues = scale_fill_gradientn(colours = ypfs_palette(type, reverse = reverse)(5), ...),
-         divergent = scale_fill_gradient2(ypfs_palette(type, reverse = reverse)(3), ...))
+scale_fill_ypfs_c <- function(palette = "yale_blues", ..., reverse = FALSE) {
+  palette <- match.arg(palette, c("sequential", "yale_blues", "divergent"))
+  switch(palette,
+         sequential = scale_fill_gradient(..., low = ypfs_pal$sequential$low, high = ypfs_pal$sequential$high),
+         divergent = scale_fill_gradient2(..., low = ypfs_pal$divergent$low, mid = ypfs_pal$divergent$mid, high = ypfs_pal$divergent$high),
+         yale_blues = scale_fill_gradientn(colours = ypfs_palette(palette, reverse = reverse)(5), ...))
 }
 
 #' @importFrom ggplot2 scale_fill_gradient scale_fill_gradient2 scale_fill_gradientn
 #'
 #' @rdname scale_fill_ypfs_d
 #' @export
-scale_colour_ypfs_c <- function(type = c("sequential", "divergent", "yale_blues"), ..., reverse = FALSE) {
-  type <- match.arg(type, c("sequential", "yale_blues", "divergent"))
-  switch(type,
+scale_colour_ypfs_c <- function(palette = "yale_blues", ..., reverse = FALSE) {
+  palette <- match.arg(palette, c("sequential", "yale_blues", "divergent"))
+  switch(palette,
          sequential = scale_colour_gradient(..., low = ypfs_pal$sequential$low, high = ypfs_pal$sequential$high),
          divergent = scale_colour_gradient2(..., low = ypfs_pal$divergent$low, mid = ypfs_pal$divergent$mid, high = ypfs_pal$divergent$high),
-         yale_blues = scale_colour_gradientn(colours = ypfs_palette(type, reverse = reverse)(5), ...))
+         yale_blues = scale_colour_gradientn(colours = ypfs_palette(palette, reverse = reverse)(5), ...))
 }
 
 #' @aliases scale_colour_yfps_c
