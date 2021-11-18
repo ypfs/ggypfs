@@ -1,15 +1,19 @@
 Package: ggypfs
-Title: What the Package Does (One Line, Title Case)
+Title: Colors and themes for YPFS plots
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Corey",
+           family = "Runkel",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "runkelcorey@gmail.com",
+           comment = c(ORCID = "0000-0001-8992-4434"))
+URL: https://ypfs.github.io/ggypfs/
+BugReports: https://github.com/ypfs/ggypfs/issues/
+Description: This package provides color palettes and applies theming to ggplot
+  objects. The elements are consistent with the Yale Program on Financial
+  Stability's New Bagehot platform, and the color palettes are (almost) all from
+  New Haven, CT.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
