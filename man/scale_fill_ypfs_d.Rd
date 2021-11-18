@@ -16,23 +16,11 @@ scale_colour_ypfs_d(palette = "west_rock", ..., reverse = FALSE)
 
 scale_color_ypfs_d(palette = "west_rock", ..., reverse = FALSE)
 
-scale_fill_ypfs_c(
-  type = c("sequential", "divergent", "yale_blues"),
-  ...,
-  reverse = FALSE
-)
+scale_fill_ypfs_c(palette = "yale_blues", ..., reverse = FALSE)
 
-scale_colour_ypfs_c(
-  type = c("sequential", "divergent", "yale_blues"),
-  ...,
-  reverse = FALSE
-)
+scale_colour_ypfs_c(palette = "yale_blues", ..., reverse = FALSE)
 
-scale_color_ypfs_c(
-  type = c("sequential", "divergent", "yale_blues"),
-  ...,
-  reverse = FALSE
-)
+scale_color_ypfs_c(palette = "yale_blues", ..., reverse = FALSE)
 }
 \arguments{
 \item{palette}{A string that (partially) matches elements in \code{\link{ypfs_pal}}.}

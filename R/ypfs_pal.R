@@ -1,35 +1,8 @@
-#' @export
-ypfs_pal <- list(
-  west_rock = c("#286dc0",
-                "#cc71b9",
-                "#d3b845",
-                "#bd5a0e",
-                "#96a53b",
-                "#9ca09f"),
-  east_rock = c("#286dc0",
-                "#f2cd5c",
-                "#bd5319",
-                "#5f712d",
-                "#978d85"),
-  sequential = list(low = "#bd1f1b",
-                 high = "#ffab54"),
-  divergent = list(low = "#5f712d",
-                mid = "#fdeabf",
-                high = "#bd5a0e"),
-  yale_blues = c("#A5D2EB",
-                 "#4BA5D7",
-                 "#1069A0",
-                 "#00356B",
-                 "#000440"),
-  fields_decomp = c("#303398",
-                    "#5ea66f",
-                    "#fedfc1",
-                    "#a0c248",
-                    "#3b5c6b",
-                    "#a33232",
-                    "#c14e4d",
-                    "#8b993c",
-                    "#f1ba5e",
-                    "#cd5849",
-                    "#a06cb8")
-)
+#' YPFS palettes
+#'
+#' A list of hex values for color palettes. These palettes take colors from Yale,
+#' New Haven's two main geologic features...and one unidentified academic paper
+#' that used a fields decomposition.
+#'
+#' @format A list with 6 elements and two levels of depth
+"ypfs_pal"

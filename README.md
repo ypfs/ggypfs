@@ -52,7 +52,7 @@ Note that you can also use the qualitative palettes with `scale_*_ypfs_c`---thou
 !['yale_blues but continuous'](github_resources/yale_blues_continuous.png)
 
 ### sequential
-!['sequential: low = #E6D2EF high = #cc71b9'](github_resources/sequential.png)
+!['sequential: low = #bd1f1b high = #ffab54'](github_resources/sequential.png)
 
 ### divergent
 !['divergent: low = #5f712d mid = #fdeabf high = #bd5a0e'](github_resources/divergent.png)
